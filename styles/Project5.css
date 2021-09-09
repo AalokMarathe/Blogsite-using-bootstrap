@@ -1,0 +1,41 @@
+body {
+  background-color: #27292d;
+}
+
+#blog__cards {
+  margin: 3em;
+}
+
+#blog__cards h5 {
+  color: white;
+}
+
+#blog__cards #card__detail {
+  color: white;
+}
+
+#blog__cards #cards {
+  background-color: #2d2e30;
+  height: 30em;
+  padding: 1em;
+}
+
+#blog__cards #cards #card2__img {
+  height: 210px;
+}
+
+#blog__cards #cards:hover {
+  -webkit-box-shadow: -5px 5px 18px black;
+          box-shadow: -5px 5px 18px black;
+}
+
+@media (max-width: 600px) {
+  img {
+    width: 100%;
+    height: 210px;
+  }
+  #cards {
+    margin-bottom: 0.6em;
+  }
+}
+/*# sourceMappingURL=Project5.css.map */

@@ -1,0 +1,139 @@
+$colors:(bgc__clr:rgb(39, 41, 45),
+    primary: rgb(255, 255, 255),
+    card__shdw:rgb(0, 0, 0),
+    caption: rgb(153,153,153),
+    info__clr: rgb(76, 91, 131));
+$fontsizes:(vsmall:0.6em);
+
+body {
+    background-color: map-get($colors, bgc__clr);
+}
+.Hero{
+    h1{
+        color: map-get($colors , primary );
+    }
+    #publisher__pic{
+        width: 20%;
+        #profile__img{
+            border-radius: 50%;
+            width: 100%;    
+    }
+    }
+    #publisher__name{
+        color: map-get($colors , caption );
+        list-style-type: none;
+        padding: 0;
+        #cpt{
+            font-size: map-get($fontsizes , vsmall);
+        }
+    }
+    #publisher__socials{
+        display: flex;
+        justify-content: center;
+        margin-left: 20em;
+        width: 10%;
+        a{
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        #socials{
+            filter: grayscale(100%);
+        }
+    }
+    #hero__img{
+            display: inline-block;
+            height: 30em;
+        #hero__img1{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+}
+.blog__body{
+    margin: 1.5em 0;
+    text-align: center;
+    #blog__info{
+        text-align: justify;
+        display: inline-block;
+        margin: 0 5em;
+        width: 50%;
+        color: map-get($colors , primary );
+        span{
+            color: map-get($colors , info__clr );
+        }
+    }
+}
+.Suggestions{
+    color: map-get($colors , primary );
+    text-align: center;
+    #social__links{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        a{
+            margin: 0 2em;
+            text-decoration: none;
+        }
+        #socials{
+            filter: grayscale(100%);
+        }
+    }
+}
+#blog__cards {
+    margin: 3em;
+    text-align: left;
+    h5 {
+        color: map-get($colors, primary);
+    }
+
+    #card__detail {
+        color: map-get($colors, primary);
+    }
+
+    #cards{
+        background-color: map-get($colors, bgc__clr);
+        
+        height: 25em;
+        padding: 1em;
+        #card__img{
+            height: 210px;
+            filter: grayscale(100);
+            &:hover{
+                filter: grayscale(0);
+            }
+        }
+        &:hover{
+            box-shadow: -5px 5px 18px map-get($colors, card__shdw);
+        }
+    }
+    
+    
+      
+    }
+@media(max-width){
+    #profile__img{
+        width: 100%;
+    }
+    #publisher__socials{
+        margin-left: 5em;
+    }
+    #hero__img{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }   
+    #hero__img1{
+        height: 1em;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: 210px;
+    }
+    #cards{
+        margin-top : 1em;    
+    }
+    
+}
